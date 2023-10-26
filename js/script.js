@@ -80,7 +80,7 @@ fullNameInput.addEventListener('blur', function() {
     }
 });
 
-// Задача 6
+//6
 let formattedFIOInput = document.querySelector('#formattedFIOInput');
 formattedFIOInput.addEventListener('blur', () => {
     let fio = formattedFIOInput.value.split(' ');
@@ -90,7 +90,7 @@ formattedFIOInput.addEventListener('blur', () => {
     formattedFIOInput.value = fio.join(' ');
 });
 
-// Задача 7
+//7
 let wordCountInput = document.querySelector('#wordCountInput');
 let resultParagraph7 = document.querySelector('#resultParagraph7');
 wordCountInput.addEventListener('blur', () => {
@@ -100,7 +100,7 @@ wordCountInput.addEventListener('blur', () => {
     resultParagraph7.textContent = 'Количество слов: ' + count;
 });
 
-// Задача 8
+//8
 let dateFormatInput = document.querySelector('#dateFormatInput');
 dateFormatInput.addEventListener('blur', () => {
     let dateParts = dateFormatInput.value.split('.');
@@ -110,7 +110,7 @@ dateFormatInput.addEventListener('blur', () => {
     }
 });
 
-// Задача 9
+//9
 let palindromeInput = document.querySelector('#palindromeInput');
 let resultParagraph9 = document.querySelector('#resultParagraph9');
 let checkPalindrome = (str) => {
@@ -122,14 +122,14 @@ palindromeInput.addEventListener('blur', () => {
     resultParagraph9.textContent = 'Это палиндром: ' + checkPalindrome(palindromeInput.value);
 });
 
-// Задача 10
+//10
 let digitSearchInput = document.querySelector('#digitSearchInput');
 let resultParagraph10 = document.querySelector('#resultParagraph10');
 digitSearchInput.addEventListener('blur', () => {
     resultParagraph10.textContent = 'Содержит цифру 3: ' + digitSearchInput.value.includes('3');
 });
 
-// Задача 11
+//11
 let numberButton1 = document.querySelector('#numberButton1');
 let numberButton2 = document.querySelector('#numberButton2');
 let numberButton3 = document.querySelector('#numberButton3');
@@ -147,20 +147,20 @@ numberButton3.addEventListener('click', () => {
     addNumberToParagraph(2);
 });
 
-// Задача 12
+//12
 let links = document.querySelectorAll('.task a');
 links.forEach((link) => {
     link.textContent += ` (${link.href})`;
 });
 
-// Задача 13
+//13
 links.forEach((link) => {
     if (link.href.startsWith('http://')) {
         link.textContent += ' →';
     }
 });
 
-// Задача 14
+//14
 let numberParagraphs = document.querySelectorAll('.numberParagraph');
 numberParagraphs.forEach((paragraph) => {
     let number = Number(paragraph.textContent);
@@ -169,7 +169,7 @@ numberParagraphs.forEach((paragraph) => {
     }
 });
 
-// Задача 15
+//15
 let dayOfWeekInput = document.querySelector('#dayOfWeekInput');
 let resultParagraph15 = document.querySelector('#resultParagraph15');
 dayOfWeekInput.addEventListener('blur', () => {
@@ -187,7 +187,7 @@ dayOfWeekInput.addEventListener('blur', () => {
     }
 });
 
-// Задача 16
+//16
 let incrementInput = document.querySelector('#incrementInput');
 let incrementButton = document.querySelector('#incrementButton');
 let decrementButton = document.querySelector('#decrementButton');
@@ -206,7 +206,7 @@ decrementButton.addEventListener('click', () => {
     }
 });
 
-// Задача 17
+//17
 let clickParagraphs = document.querySelectorAll('.clickParagraph');
 let clickCount = 0;
 clickParagraphs.forEach((paragraph) => {
@@ -216,7 +216,7 @@ clickParagraphs.forEach((paragraph) => {
     });
 });
 
-// Задача 18
+//18
 let trimDivs = document.querySelectorAll('.trimDiv');
 trimDivs.forEach((div) => {
     let text = div.textContent;
@@ -225,7 +225,7 @@ trimDivs.forEach((div) => {
     }
 });
 
-// Задача 19
+//19
 let randomStringInput = document.querySelector('#randomStringInput');
 let generateRandomStringButton = document.querySelector('#generateRandomStringButton');
 generateRandomStringButton.addEventListener('click', () => {
@@ -233,7 +233,7 @@ generateRandomStringButton.addEventListener('click', () => {
     randomStringInput.value = randomString;
 });
 
-// Задача 20
+//20
 let shuffleInput = document.querySelector('#shuffleInput');
 let shuffleButton = document.querySelector('#shuffleButton');
 shuffleButton.addEventListener('click', () => {
@@ -242,7 +242,7 @@ shuffleButton.addEventListener('click', () => {
     shuffleInput.value = shuffledText;
 });
 
-// Задача 21
+//21
 let fahrenheitInput = document.querySelector('#fahrenheitInput');
 let convertButton = document.querySelector('#convertButton');
 let resultParagraph21 = document.querySelector('#resultParagraph21');
@@ -254,12 +254,12 @@ convertButton.addEventListener('click', () => {
     }
 });
 
-// Задача 22
+//22
 let factorialInput = document.querySelector('#factorialInput');
 let calculateFactorialButton = document.querySelector('#calculateFactorialButton');
 let resultParagraph22 = document.querySelector('#resultParagraph22');
 let factorial = (n) => {
-    if (n === 0) {
+    if (n === 0) {пше
         return 1;
     } else {
         return n * factorial(n - 1);
@@ -275,7 +275,7 @@ calculateFactorialButton.addEventListener('click', () => {
     }
 });
 
-// Задача 23
+//23
 let aInput = document.querySelector('#aInput');
 let bInput = document.querySelector('#bInput');
 let cInput = document.querySelector('#cInput');
