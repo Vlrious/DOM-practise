@@ -1,7 +1,7 @@
 "use strict"
 //1
-let input = document.querySelector('#myInput');
-let paragraph = document.querySelector('#myParagraph');
+let input = document.querySelectorAll('#myInput');
+let paragraph = document.querySelectorAll('#myParagraph');
 
 input.addEventListener('blur', function() {
     let inputValue = input.value;
@@ -9,11 +9,11 @@ input.addEventListener('blur', function() {
 });
 
 //2
-let input1 = document.querySelector('#input1');
-let input2 = document.querySelector('#input2');
-let input3 = document.querySelector('#input3');
-let resultParagraph = document.querySelector('#resultParagraph');
-let calculateButton = document.querySelector('#calculateButton');
+let input1 = document.querySelectorAll('#input1');
+let input2 = document.querySelectorAll('#input2');
+let input3 = document.querySelectorAll('#input3');
+let resultParagraph = document.querySelectorAll('#resultParagraph');
+let calculateButton = document.querySelectorAll('#calculateButton');
 
 calculateButton.addEventListener('click', function() {
     let num1 = Number(input1.value) || 0;
@@ -24,8 +24,8 @@ calculateButton.addEventListener('click', function() {
 });
 
 //3
-let numberInput = document.querySelector('#numberInput');
-let digitSumParagraph = document.querySelector('#digitSumParagraph');
+let numberInput = document.querySelectorAll('#numberInput');
+let digitSumParagraph = document.querySelectorAll('#digitSumParagraph');
 
 numberInput.addEventListener('blur', function() {
     let inputValue = numberInput.value;
@@ -39,8 +39,8 @@ numberInput.addEventListener('blur', function() {
 });
 
 //4
-let numbersInput = document.querySelector('#numbersInput');
-let averageParagraph = document.querySelector('#averageParagraph');
+let numbersInput = document.querySelectorAll('#numbersInput');
+let averageParagraph = document.querySelectorAll('#averageParagraph');
 
 numbersInput.addEventListener('blur', function() {
     let inputValues = numbersInput.value;
@@ -56,10 +56,10 @@ numbersInput.addEventListener('blur', function() {
 });
 
 //5
-let fullNameInput = document.querySelector('#fullNameInput');
-let lastNameInput = document.querySelector('#lastNameInput');
-let firstNameInput = document.querySelector('#firstNameInput');
-let middleNameInput = document.querySelector('#middleNameInput');
+let fullNameInput = document.querySelectorAll('#fullNameInput');
+let lastNameInput = document.querySelectorAll('#lastNameInput');
+let firstNameInput = document.querySelectorAll('#firstNameInput');
+let middleNameInput = document.querySelectorAll('#middleNameInput');
 
 fullNameInput.addEventListener('blur', function() {
     let fullName = fullNameInput.value;
@@ -81,7 +81,7 @@ fullNameInput.addEventListener('blur', function() {
 });
 
 //6
-let formattedFIOInput = document.querySelector('#formattedFIOInput');
+let formattedFIOInput = document.querySelectorAll('#formattedFIOInput');
 formattedFIOInput.addEventListener('blur', () => {
     let fio = formattedFIOInput.value.split(' ');
     for (let i = 0; i < fio.length; i++) {
@@ -91,8 +91,8 @@ formattedFIOInput.addEventListener('blur', () => {
 });
 
 //7
-let wordCountInput = document.querySelector('#wordCountInput');
-let resultParagraph7 = document.querySelector('#resultParagraph7');
+let wordCountInput = document.querySelectorAll('#wordCountInput');
+let resultParagraph7 = document.querySelectorAll('#resultParagraph7');
 wordCountInput.addEventListener('blur', () => {
     let text = wordCountInput.value;
     let words = text.split(' ');
@@ -101,7 +101,7 @@ wordCountInput.addEventListener('blur', () => {
 });
 
 //8
-let dateFormatInput = document.querySelector('#dateFormatInput');
+let dateFormatInput = document.querySelectorAll('#dateFormatInput');
 dateFormatInput.addEventListener('blur', () => {
     let dateParts = dateFormatInput.value.split('.');
     if (dateParts.length === 3) {
@@ -111,8 +111,8 @@ dateFormatInput.addEventListener('blur', () => {
 });
 
 //9
-let palindromeInput = document.querySelector('#palindromeInput');
-let resultParagraph9 = document.querySelector('#resultParagraph9');
+let palindromeInput = document.querySelectorAll('#palindromeInput');
+let resultParagraph9 = document.querySelectorAll('#resultParagraph9');
 let checkPalindrome = (str) => {
     let cleanStr = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
     let reversedStr = cleanStr.split('').reverse().join('');
@@ -123,16 +123,16 @@ palindromeInput.addEventListener('blur', () => {
 });
 
 //10
-let digitSearchInput = document.querySelector('#digitSearchInput');
-let resultParagraph10 = document.querySelector('#resultParagraph10');
+let digitSearchInput = document.querySelectorAll('#digitSearchInput');
+let resultParagraph10 = document.querySelectorAll('#resultParagraph10');
 digitSearchInput.addEventListener('blur', () => {
     resultParagraph10.textContent = 'Содержит цифру 3: ' + digitSearchInput.value.includes('3');
 });
 
 //11
-let numberButton1 = document.querySelector('#numberButton1');
-let numberButton2 = document.querySelector('#numberButton2');
-let numberButton3 = document.querySelector('#numberButton3');
+let numberButton1 = document.querySelectorAll('#numberButton1');
+let numberButton2 = document.querySelectorAll('#numberButton2');
+let numberButton3 = document.querySelectorAll('#numberButton3');
 let paragraphs = document.querySelectorAll('.task p');
 let addNumberToParagraph = (index) => {
     paragraphs[index].textContent += ' ' + (index + 1);
@@ -170,8 +170,8 @@ numberParagraphs.forEach((paragraph) => {
 });
 
 //15
-let dayOfWeekInput = document.querySelector('#dayOfWeekInput');
-let resultParagraph15 = document.querySelector('#resultParagraph15');
+let dayOfWeekInput = document.querySelectorAll('#dayOfWeekInput');
+let resultParagraph15 = document.querySelectorAll('#resultParagraph15');
 dayOfWeekInput.addEventListener('blur', () => {
     let dateParts = dayOfWeekInput.value.split('.');
     if (dateParts.length === 3) {
@@ -188,9 +188,9 @@ dayOfWeekInput.addEventListener('blur', () => {
 });
 
 //16
-let incrementInput = document.querySelector('#incrementInput');
-let incrementButton = document.querySelector('#incrementButton');
-let decrementButton = document.querySelector('#decrementButton');
+let incrementInput = document.querySelectorAll('#incrementInput');
+let incrementButton = document.querySelectorAll('#incrementButton');
+let decrementButton = document.querySelectorAll('#decrementButton');
 incrementButton.addEventListener('click', () => {
     let value = Number(incrementInput.value, 10);
     if (!isNaN(value)) {
@@ -226,16 +226,16 @@ trimDivs.forEach((div) => {
 });
 
 //19
-let randomStringInput = document.querySelector('#randomStringInput');
-let generateRandomStringButton = document.querySelector('#generateRandomStringButton');
+let randomStringInput = document.querySelectorAll('#randomStringInput');
+let generateRandomStringButton = document.querySelectorAll('#generateRandomStringButton');
 generateRandomStringButton.addEventListener('click', () => {
     let randomString = Math.random().toString(36).substring(2, 10);
     randomStringInput.value = randomString;
 });
 
 //20
-let shuffleInput = document.querySelector('#shuffleInput');
-let shuffleButton = document.querySelector('#shuffleButton');
+let shuffleInput = document.querySelectorAll('#shuffleInput');
+let shuffleButton = document.querySelectorAll('#shuffleButton');
 shuffleButton.addEventListener('click', () => {
     let inputText = shuffleInput.value;
     let shuffledText = inputText.split('').sort(() => Math.random() - 0.5).join('');
@@ -243,9 +243,9 @@ shuffleButton.addEventListener('click', () => {
 });
 
 //21
-let fahrenheitInput = document.querySelector('#fahrenheitInput');
-let convertButton = document.querySelector('#convertButton');
-let resultParagraph21 = document.querySelector('#resultParagraph21');
+let fahrenheitInput = document.querySelectorAll('#fahrenheitInput');
+let convertButton = document.querySelectorAll('#convertButton');
+let resultParagraph21 = document.querySelectorAll('#resultParagraph21');
 convertButton.addEventListener('click', () => {
     let fahrenheit = Number(fahrenheitInput.value);
     if (!isNaN(fahrenheit)) {
@@ -255,9 +255,9 @@ convertButton.addEventListener('click', () => {
 });
 
 //22
-let factorialInput = document.querySelector('#factorialInput');
-let calculateFactorialButton = document.querySelector('#calculateFactorialButton');
-let resultParagraph22 = document.querySelector('#resultParagraph22');
+let factorialInput = document.querySelectorAll('#factorialInput');
+let calculateFactorialButton = document.querySelectorAll('#calculateFactorialButton');
+let resultParagraph22 = document.querySelectorAll('#resultParagraph22');
 let factorial = (n) => {
     if (n === 0) {пше
         return 1;
@@ -276,11 +276,11 @@ calculateFactorialButton.addEventListener('click', () => {
 });
 
 //23
-let aInput = document.querySelector('#aInput');
-let bInput = document.querySelector('#bInput');
-let cInput = document.querySelector('#cInput');
-let calculateRootsButton = document.querySelector('#calculateRootsButton');
-let resultParagraph23 = document.querySelector('#resultParagraph23');
+let aInput = document.querySelectorAll('#aInput');
+let bInput = document.querySelectorAll('#bInput');
+let cInput = document.querySelectorAll('#cInput');
+let calculateRootsButton = document.querySelectorAll('#calculateRootsButton');
+let resultParagraph23 = document.querySelectorAll('#resultParagraph23');
 calculateRootsButton.addEventListener('click', () => {
     let a = Number(aInput.value);
     let b = Number(bInput.value);
